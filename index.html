@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Phùng Hữu Luân</title>
+
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="logo">Phùng Hữu Luân</div>
+
+    <nav class="navbar">
+      <a href="#hero" class="active"><i class="fas fa-house"></i> Trang chủ</a>
+      <a href="#about"><i class="fas fa-user"></i> Về tôi</a>
+      <a href="#skills"><i class="fas fa-code"></i> Kỹ năng</a>
+      <a href="#projects"><i class="fas fa-folder-open"></i> Dự án</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Chuyển chế độ nền">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="menu-icon"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero">
+    <video autoplay muted loop playsinline id="hero-video-bg">
+      <source src="assets/videos/background-effect.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h3>Xin chào, tôi là</h3>
+      <h1><span id="typing-text"></span><span class="cursor">|</span></h1>
+      <p class="intro-text">
+        Sinh viên Công nghệ Thông tin tại <b>Đại học Tôn Đức Thắng</b>.<br>
+        Tôi yêu lập trình, thiết kế và sáng tạo sản phẩm mang lại trải nghiệm tuyệt vời cho người dùng.
+      </p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary ripple">Khám phá thêm</a>
+        <a href="PhungHuuLuan_CV.pdf" download class="btn btn-outline ripple"><i class="fas fa-download"></i> Tải CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about section">
+    <h2 class="section-title">Giới thiệu bản thân</h2>
+
+    <div class="about-container">
+      <!-- Vòng 3D -->
+      <div class="carousel-3d">
+        <div class="carousel-item" style="--i:0;"><video src="assets/videos/1.mp4" autoplay muted loop playsinline></video></div>
+        <div class="carousel-item" style="--i:1;"><img src="assets/images/1.jpg" alt=""></div>
+        <div class="carousel-item" style="--i:2;"><video src="assets/videos/2.mp4" autoplay muted loop playsinline></video></div>
+        <div class="carousel-item" style="--i:3;"><img src="assets/images/2.jpg" alt=""></div>
+        <div class="carousel-item" style="--i:4;"><video src="assets/videos/3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="carousel-item" style="--i:5;"><img src="assets/images/3.jpg" alt=""></div>
+      </div>
+
+      <!-- Nội dung giới thiệu -->
+      <div class="about-text">
+        <p>
+          Tôi là <strong>Phùng Hữu Luân</strong> – sinh viên năm 2 ngành <b>Công nghệ Thông tin</b> tại <b>Đại học Tôn Đức Thắng</b>.
+          Với niềm đam mê lập trình và thiết kế, tôi luôn tìm cách kết hợp công nghệ và thẩm mỹ để mang lại sản phẩm trực quan, tối ưu trải nghiệm người dùng.
+        </p>
+        <ul class="personal-info">
+          <li><i class="fas fa-calendar-alt"></i> 13/10/2006</li>
+          <li><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh</li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:luan0017091310@gmail.com">luan0017091310@gmail.com</a></li>
+        </ul>
+        <a href="#projects" class="btn btn-primary ripple"><i class="fas fa-arrow-right"></i> Xem dự án</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section skills">
+    <h2 class="section-title">Kỹ năng</h2>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Ngôn ngữ lập trình</h3>
+      <div class="skill-grid">
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">C/C++</div>
+        <div class="skill-item">SQL</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-laptop-code"></i> Frameworks & Thư viện</h3>
+      <div class="skill-grid">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section projects">
+    <h2 class="section-title">Dự án</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/images/1.jpg" alt="Portfolio Project">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Website cá nhân giới thiệu kỹ năng, dự án và hiệu ứng động hiện đại.</p>
+          <div class="project-tech-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Liên hệ</h2>
+    <div class="contact-content">
+      <p>Bạn có dự án thú vị hoặc muốn hợp tác? Hãy liên hệ với tôi qua form hoặc mã QR bên dưới:</p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Tên của bạn" required>
+        <input type="email" name="_replyto" placeholder="Email của bạn" required>
+        <textarea name="message" placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+      </form>
+
+      <div class="bank-info">
+        <h3>Thông tin tài khoản</h3>
+        <p><i class="fas fa-university"></i> Ngân hàng: <b>MBBank</b></p>
+        <p><i class="fas fa-money-check-alt"></i> Số tài khoản: <b>0347043129</b></p>
+        <p><i class="fas fa-user-circle"></i> Chủ tài khoản: <b>PHÙNG HỮU LUÂN</b></p>
+
+        <button id="qrButton" class="btn btn-primary">📱 Xem mã QR thanh toán</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR POPUP -->
+  <div id="qrPopup" class="qr-popup">
+    <span class="close-btn">&times;</span>
+    <img src="assets/images/5.jpg" alt="QR Thanh toán MBBank">
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/phunghuuluan" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://web.facebook.com/luan.phunghuu.90" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>&copy; 2025 Phùng Hữu Luân. All rights reserved. Cảm ơn đã xem! hihi</p>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    // Typing Animation
+    const typingText = document.getElementById("typing-text");
+    const textArr = ["Phùng Hữu Luân", "It năm 2", "Sinh viên đam mê với chuyên ngành:<<))"];
+    let index = 0, char = 0, deleting = false;
+    function typing() {
+      const text = textArr[index];
+      if (!deleting) {
+        typingText.textContent = text.slice(0, ++char);
+        if (char === text.length) { deleting = true; setTimeout(typing, 1200); }
+        else setTimeout(typing, 100);
+      } else {
+        typingText.textContent = text.slice(0, --char);
+        if (char === 0) { deleting = false; index = (index + 1) % textArr.length; }
+        setTimeout(typing, 60);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", typing);
+
+    // Dark Mode
+    const toggle = document.getElementById("theme-toggle");
+    const icon = toggle.querySelector("i");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      icon.classList = document.body.classList.contains("dark") ? "fas fa-sun" : "fas fa-moon";
+    });
+
+    // Header Scroll
+    window.addEventListener("scroll", () => {
+      document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Snow Effect
+    function createSnow() {
+      const snow = document.createElement("div");
+      snow.classList.add("snowflake");
+      snow.textContent = "❄";
+      snow.style.left = Math.random() * 100 + "vw";
+      snow.style.animationDuration = Math.random() * 5 + 5 + "s";
+      snow.style.fontSize = Math.random() * 10 + 8 + "px";
+      document.body.appendChild(snow);
+      setTimeout(() => snow.remove(), 10000);
+    }
+    setInterval(createSnow, 200);
+
+    // Click Effect
+    document.addEventListener("click", (e) => {
+      const effect = document.createElement("span");
+      effect.classList.add("click-effect");
+      effect.style.left = e.clientX + "px";
+      effect.style.top = e.clientY + "px";
+      effect.style.width = "20px";
+      effect.style.height = "20px";
+      effect.style.background = `radial-gradient(circle, #00b7ff, transparent 70%)`;
+      document.body.appendChild(effect);
+      setTimeout(() => effect.remove(), 600);
+    });
+
+    // QR Popup
+    const qrButton = document.getElementById("qrButton");
+    const qrPopup = document.getElementById("qrPopup");
+    const closeBtn = document.querySelector(".close-btn");
+    qrButton.addEventListener("click", () => qrPopup.classList.add("active"));
+    closeBtn.addEventListener("click", () => qrPopup.classList.remove("active"));
+    qrPopup.addEventListener("click", (e) => { if (e.target === qrPopup) qrPopup.classList.remove("active"); });
+
+    // About Section Background Fade
+    const aboutSection = document.querySelector('#about');
+    const bgImgs = ['assets/images/1.jpg','assets/images/2.jpg','assets/images/3.jpg','assets/images/4.jpg'];
+    let curr = 0;
+    const bg1 = document.createElement('div'), bg2 = document.createElement('div');
+    bg1.classList.add('about-bg', 'active'); bg2.classList.add('about-bg');
+    aboutSection.append(bg1,bg2); bg1.style.backgroundImage = `url(${bgImgs[0]})`;
+    setInterval(()=>{
+      const next = (curr+1)%bgImgs.length;
+      bg2.style.backgroundImage=`url(${bgImgs[next]})`;
+      bg2.classList.add('active');
+      setTimeout(()=>{
+        bg1.classList.remove('active');
+        [bg1.style.backgroundImage,bg2.style.backgroundImage]=[bg2.style.backgroundImage,bg1.style.backgroundImage];
+        bg1.classList.add('active'); bg2.classList.remove('active');
+        curr=next;
+      },2500);
+    },8000);
+  </script>
+</body>
+</html>
